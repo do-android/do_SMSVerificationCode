@@ -1,0 +1,89 @@
+{
+  "ID": "do_SMSVerificationCode",
+  "IsContainer": "0",
+  "Type": "SM",
+  "UIType": "Layout",
+  "Name": "短信验证码",
+  "Version": "Internal",
+  "Description": "短信验证码组件,给用户手机号码发送验证码并验证",
+  "Icon": "",
+  "BBS": "",
+  "Keyword": "其它类型",
+  "IOS": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Android": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Windows": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [],
+  "Events": [],
+  "syncMethodes": [],
+  "asyncMethodes": [
+    {
+      "ID": "getSMSVerificationCode",
+      "Name": "根据手机号获取短信验证码",
+      "Description": "",
+      "ReturnType": "Bool",
+      "ReturnType_JavaScript": "Bool",
+      "ReturnDesc": "成功返回true,失败返回false",
+      "Paras": [
+        {
+          "ID": "phoneNumber",
+          "Name": "手机号码",
+          "Type": "String",
+          "Type_JavaScript": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "对该号码发送验证码",
+          "Deprecated": false
+        }
+      ],
+      "Deprecated": false
+    },
+    {
+      "ID": "verifySMSVerificationCode",
+      "Name": "验证短信验证码",
+      "Description": "",
+      "ReturnType": "Bool",
+      "ReturnType_JavaScript": "Bool",
+      "ReturnDesc": "验证成功返回true,失败返回false",
+      "Paras": [
+        {
+          "ID": "code",
+          "Name": "验证码",
+          "Type": "String",
+          "Type_JavaScript": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "收到的验证码",
+          "Deprecated": false
+        },
+        {
+          "ID": "phoneNumber",
+          "Name": "手机号码",
+          "Type": "String",
+          "Type_JavaScript": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "手机号码",
+          "Deprecated": false
+        }
+      ],
+      "Deprecated": false
+    }
+  ]
+}

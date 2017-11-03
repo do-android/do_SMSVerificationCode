@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="MOBAppKey">{{do_smsverificationcode_MOBAppKey}}</string>
+    <string name="MOBAppSecret">{{do_smsverificationcode_MOBAppSecret}}</string>
+</resources>
