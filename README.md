@@ -1,0 +1,2 @@
+# do_SMSVerificationCode
+短信验证码组件,给用户手机号码发送验证码并验证
